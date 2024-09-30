@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans Korean' !important;
+    letter-spacing: -0.05em;
+    line-height: 1.6em;
 }
 
 #PageTop {
@@ -10,7 +13,7 @@ html, body {
     right: 1%;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1700px) { /* top 반응*/
     #PageTop {
         position: fixed;
         bottom: 0px;
@@ -40,3 +43,221 @@ html, body {
     display: block;
     line-height: 1;
 }
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 114px;
+    z-index: 9999;
+}
+
+.firhead {
+    background-color: rgba(0, 0, 7, 0.8);
+    border-bottom: 1px solid #4a4d51
+}
+
+.navbar {
+    width: 1200px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.haed-nav-ul {
+    display: flex;
+    font-size: 14px;
+    float: right;
+}
+
+a {
+    transition: all .2s ease-in-out;
+}
+ul {
+    list-style-type: none;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 170px;
+    background-color: #a1131f;
+    text-align: center;
+    z-index: 500;
+}
+
+.sechead {
+    background-color: rgba(0, 0, 7, 0.5);
+    height: 74px;
+    width: 100%;
+}
+
+.secnavbar {
+    width: 1200px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.fir-ul li a { /* 첫째 줄 글자 */
+    font-size: 80%;
+    padding: 10px 9px 0px 9px;
+    color: rgb(133, 133, 136);
+}
+
+.sec-ul li a { /* 둘째 줄 글자 */
+    font-size: 100%;
+    padding: 20px 32px 20px 32px;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    position: relative;
+
+}
+
+.search-icon {
+    margin-top: 5px;
+}
+
+.three-icon {
+    margin-top: 5px;
+}
+
+.three {
+    padding-bottom: 0;
+}
+
+.logo a img {
+    margin-top: 36px;
+}
+
+.navigation a:hover {
+    color: #ffa3ab !important;
+}
+
+/* header 끝*/
+/* =================================================================
+/* section */
+/* slider 부분임 */
+.slider__wrap {
+    width: 100%;
+    height: 630px; /* 고정 높이 */
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* 영역 밖의 이미지를 숨김 */
+    z-index: 500;
+    position: relative;
+}
+
+.slider__img {
+    position: relative;
+    width: 100%;
+    height: 100%; /* 부모 높이에 맞춤 */
+    overflow: hidden; /* 여백 없음 */
+}
+
+.slider__inner {
+    display: flex;
+    transition: transform 1s ease-in-out; /* 슬라이드 부드러운 이동 */
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 부모 높이에 맞춤 */
+}
+
+.slider {
+    flex: 0 0 100%; /* 각 슬라이드가 100% 차지 */
+    height: 100%; /* 부모 높이에 맞춤 */
+    background-size: cover; /* 배경 이미지 크기를 슬라이드에 맞춤 */
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+}
+
+.slider::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.controls {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.slide-boxs {
+    display: flex;
+}
+
+.slide-box-item {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin : 0 6px;
+    cursor: pointer;
+}
+
+.slide-box-item span {
+    visibility: hidden;
+}
+
+.play-pause {
+    margin-top: 7px;
+    color: #fff;
+}
+
+.play-btn {
+    cursor: pointer;
+}
+
+.pause-btn {
+    cursor: pointer;
+}
+
+.slide-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__wrap:hover .prev {
+    transition: 1s ease-out;
+    opacity: 1;
+}
+.slider__wrap:hover .next{
+    transition: 1s ease-out;
+    opacity: 1;
+}
+
+.prev {
+    opacity: 0;
+    transition: 0.5s ease-out;
+    position: absolute;
+    left: 0;
+    height: 100%;
+
+}
+
+.next {
+    opacity: 0;
+    transition: 0.5s ease-out;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------- --------------------------------
+

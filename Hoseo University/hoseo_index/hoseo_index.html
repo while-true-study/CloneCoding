@@ -7,18 +7,156 @@
     <link rel="stylesheet" href="../every.css">
     <link rel="stylesheet" href="hoseo_index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <div id="header">
-            <div class="navigation">
-
+            <div class="navigation">  <!--처음 2개 묶은거임 -->
+                <div class="firhead">  <!--처음 헤드 -->
+                    <div class="navbar">    <!-- 중앙으로 하기위해서 -->
+                        <div class="logo">
+                            <a href="#" title="호서대학교 메인으로 이동">
+                                <img src="../top_logo.png" alt="호서대학교 로고 메인으로 이동합니다.">
+                            </a>
+                        </div>
+                        <ul class="haed-nav-ul fir-ul">
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="#">포털/학사</a>
+                            </li>
+                            <li>
+                                <a href="#">LINC3.0사업단</a>
+                            </li>
+                            <li>
+                                <a href="#">AI·SW중심대학사업단</a>
+                            </li>
+                            <li>
+                                <a href="#">대학혁신지원사업단</a>
+                            </li>
+                            <li>
+                                <a href="#">산학협력단</a>
+                            </li>
+                            <li>
+                                <a href="#">ENGLISH</a>
+                            </li>
+                            <li>
+                                <a href="#">CHINESE</a>
+                            </li>
+                            <li>
+                                <div class="search-icon">
+                                    <a href="" class="drop-toggle">
+                                        <span class="material-symbols-outlined">
+                                            search
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="three-icon">
+                                    <a href="#" class="three">
+                                        <img src="./assets/sitemap_icon.gif" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sechead">   <!-- 헤드 2번째 줄임! -->
+                    <div class="secnavbar">
+                        <ul class="haed-nav-ul sec-ul">
+                            <li>
+                                <a href="#">호서소개</a>
+                            </li>
+                            <li>
+                                <a href="#">입학안내</a>
+                            </li>
+                            <li>
+                                <a href="#">대학·대학원</a>
+                            </li>
+                            <li>
+                                <a href="#">학사종합</a>
+                            </li>
+                            <li>
+                                <a href="#">대학생활</a>
+                            </li>
+                            <li>
+                                <a href="#">호서광장</a>
+                            </li>
+                            <li>
+                                <a href="#">총학생회</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <section>
-        몸통임~
+
+    <section id="sliderType01">
+        <div class="slider__wrap">
+            <div class="slider__img">
+                <div class="slider__inner">
+                    <div class="slider" style="background-image: url('./assets/cat-1.jpg');"></div>
+                    <div class="slider" style="background-image: url('./assets/cat-2.jpg');"></div>
+                    <div class="slider" style="background-image: url('./assets/cat-3.jpg');"></div>
+                    <div class="slider" style="background-image: url('./assets/cat-4.jpg');"></div>
+                    <div class="slider" style="background-image: url('./assets/cat-5.jpg');"></div>
+                    <div class="slider" style="background-image: url('./assets/cat-1.jpg');"></div>
+                </div>
+            </div>
+            <div class="slide-btn">
+                <a href="#" class="prev" title="이전이미지">
+                    <img src="./assets/left-arrow.png" alt="">
+                </a>
+                <a href="#" class="next" title="다음이미지">
+                    <img src="./assets/right-arrow.png" alt="">
+                </a>
+            </div>
+            <div class="controls"> <!-- slide 버튼 -->
+                <div class="slide-boxs"> <!-- slide 동그라미 박스 -->
+                    <div class="slide-box-item">
+                        <a class="slide-box-item-link"><span>1</span></a>
+                    </div>
+                    <div class="slide-box-item">
+                        <a class="slide-box-item-link"><span>2</span></a>
+                    </div>
+                    <div class="slide-box-item">
+                        <a class="slide-box-item-link"><span>3</span></a>
+                    </div>
+                    <div class="slide-box-item">
+                        <a class="slide-box-item-link"><span>4</span></a>
+                    </div>
+                    <div class="slide-box-item">
+                        <a class="slide-box-item-link"><span>5</span></a>
+                    </div>
+                </div>
+                <div class="play-pause">
+                    <a class="play-btn">
+                        <span class="material-symbols-outlined">
+                            play_arrow
+                        </span>
+                    </a>
+                    <a class="pause-btn">
+                        <span class="material-symbols-outlined">
+                            pause
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
     <div id="PageTop">
         <a href="#">
             <span class="material-symbols-outlined size">
